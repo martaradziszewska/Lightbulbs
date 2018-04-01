@@ -1,0 +1,197 @@
+/*reset css*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*general styles*/
+
+.container {
+    width: 100%;
+    min-height: 900px;
+    background-color: #07617D;
+    position: relative;
+
+}
+
+.lightbulb2 {
+    position: absolute;
+    left: 20%;
+    transform: scale(0.7);
+}
+
+.lightbulb3 {
+    position: absolute;
+    left: 35%;
+    transform: scale(0.5);
+}
+
+.lightbulb4 {
+    position: absolute;
+    right: 30%;
+    transform: scale(0.8)
+}
+
+
+
+/*style for lightbulb*/
+
+.rope {
+    height: 200px;
+    width: 5px;
+    background: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.small-thread {
+    width: 40px;
+    height: 35px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 190px;
+
+}
+
+.big-thread {
+    width: 80px;
+    height: 60px;
+    background: #B3B2B4;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 208px;
+    border-radius: 15px 15px 0 0;
+}
+
+.big-thread div {
+    width: 90px;
+    height: 12px;
+    /*background:#D7D5D9;*/
+    background: #ECECEB;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+
+}
+
+.big-thread .first-line {
+    margin-top: 7px;
+
+}
+
+.big-thread .second-line {
+    margin-top: 27px;
+
+}
+
+.big-thread .third-line {
+    margin-top: 47px;
+
+}
+
+
+.bulb {
+    width: 80px;
+    height: 40px;
+    /*background: #F9A828;*/
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 267px;
+    border-radius: 5px 5px 0 0;
+}
+
+.bulb-circle {
+    width: 180px;
+    height: 185px;
+    border-radius: 50%;
+    /*background: #F9A828;*/
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 18px;
+
+}
+
+/*animation for lightbulbs*/
+
+.lightbulb1 div[class*="bulb"] {
+    background-color: #F9A828;
+    animation: lightA 1.5s ease-in-out infinite;
+}
+
+.lightbulb1 div[class*="bulb"]:hover {
+    animation: none;
+}
+
+.lightbulb2 div[class*="bulb"] {
+    background: #FB2951;
+    animation: lightB 1.5s ease-in-out infinite;
+}
+
+.lightbulb2 div[class*="bulb"]:hover {
+    animation: none;
+}
+
+.lightbulb3 div[class*="bulb"] {
+    background: #00FFC3;
+    animation: lightC 1.5s ease-in-out infinite;
+}
+
+.lightbulb3 div[class*="bulb"]:hover {
+    animation: none;
+}
+
+.lightbulb4 div[class*="bulb"] {
+    background: #C100BD;
+    animation: lightD 2s ease-in-out infinite;
+}
+
+.lightbulb4 div[class*="bulb"]:hover {
+    animation: none;
+}
+
+
+@keyframes lightA {
+    from {
+        box-shadow: 0 0 20px #F9A828, 0 0 150px #F9A828
+    }
+    to {
+        box-shadow: 0 0 120px #F9A828, 0 0 10px #F9A828
+    }
+}
+
+@keyframes lightB {
+    from {
+        box-shadow: 0 0 20px #FB2951, 0 0 150px #FB2951
+    }
+    to {
+        box-shadow: 0 0 120px #FB2951, 0 0 10px #FB2951
+    }
+}
+
+@keyframes lightC {
+    from {
+        box-shadow: 0 0 20px #00FFC3, 0 0 150px #00FFC3
+    }
+    to {
+        box-shadow: 0 0 120px #00FFC3, 0 0 10px #00FFC3
+    }
+}
+
+@keyframes lightD {
+    from {
+        box-shadow: 0 0 20px #C100BD, 0 0 150px #C100BD
+    }
+    to {
+        box-shadow: 0 0 120px #C100BD, 0 0 10px #C100BD
+    }
+}
